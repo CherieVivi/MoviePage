@@ -1,0 +1,328 @@
+.head{
+    background-image: url("../img_main/search_background.jpg");
+    padding: 30px 0px;
+}
+.search{
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    border-radius: 1000px;
+    background-color: #ffffff;
+}
+.search .input-group button,input,.input-group-addon{
+    border: none;
+}
+.search .input-group input{
+    height: 30px;
+    width: 100%;
+    margin: 5px 10px;
+    padding-right: 10px;
+}
+.search .input-group .input-group-addon{
+    background-color: #ffffff;
+    color: #009ed7;
+    font-size: 20px;
+}
+.search_foot{
+    background-image: url("../img_main/search_foot.png");
+    background-position: 0px 0px;
+    height: 8px;
+}
+.menu_bg{
+    background-image: url("../img_main/topbg.png");
+    background-repeat: repeat-x;
+    background-position: top;
+    position: absolute;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    z-index: 100;
+}
+.top_menu a{
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 30px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.top_menu a:hover{
+    border-bottom: 4px solid #ffffff;
+}
+.ppt .ppt_1{
+    background-image: url("../img_main/ppt_1.jpg");
+    background-size: cover;                /*不改变图片的比例调整图片，溢出部分不显示*/
+    background-position: center;
+    height: 450px;
+    z-index: -2;
+}
+.ppt .ppt_2{
+    background-image: url("../img_main/ppt_2.jpg");
+    background-size: cover;                /*不改变图片的比例调整图片，溢出部分不显示*/
+    background-position: center;
+    height: 450px;
+    z-index: -2;
+}
+.ppt .ppt_3{
+    background-image: url("../img_main/ppt_3.jpg");
+    background-size: cover;                /*不改变图片的比例调整图片，溢出部分不显示*/
+    background-position: center;
+    height: 450px;
+    z-index: -2;
+}
+.content{
+    padding: 0px;
+    position: relative;
+    top: -380px;
+    height: 600px;
+    z-index: 1;
+}
+.movie_about{
+    position: relative;
+    z-index: -5;
+}
+.content .movie_about_bg{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    z-index: -5;
+}
+#movie_about_carousel{
+    background-color: #ffffff;
+    width: 98%;
+    margin-left: 1%;
+    position: relative;
+    top: -250px;
+    z-index: -1;
+    overflow: visible;
+}
+.movie_pic{
+    background-color: #ffffff;
+    /*height: 299px;*/
+    width: 198px;
+    top: -180px;
+    left: 2%;
+    position: absolute;
+    z-index: 99;
+}
+.movie_pic img{
+    margin: 5px;
+}
+.movie_pic .movie_pic_bottom .movie_no{
+    color: #ffffff;
+    height: 50px;
+    background-color: #679c21;
+    display: inline-block;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 8px;
+    padding: 0px;
+}
+.movie_pic .movie_pic_bottom .movie_no h5{
+    line-height: 2px;
+}
+.movie_pic .movie_pic_bottom .movie_no b{
+    font-size: 25px;
+    line-height: normal;
+}
+.movie_pic .movie_pic_bottom .movie_time{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 0px;
+}
+.movie_information{
+    height: 200px;
+    width:70%;
+    display: inline-block;
+}
+.movie_information span{
+    font-size: 20px;
+    color: #679c21;
+    margin-top: 23px;
+    margin-left: 5px;
+    display: block;
+}
+.movie_information p{
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+    display: block;
+}
+.movie_buy{
+    height: 140px;
+    width: 22%;
+    display: inline-block;
+    border-left: 1px solid rgba(0, 0, 0, 0.21);
+    vertical-align: top;
+    margin: 30px 0px;
+    text-align: center;
+    padding: 0px;
+}
+.movie_buy h1{
+    font-size: 70px;
+    margin-top: 0px;
+}
+.movie_buy span{
+    font-size: 15px;
+}
+.movie_buy button{
+    width: 75%;
+    padding: 10px 0px;
+    border-radius: 1000px;
+}
+.movie_hot{
+    /*border: 1px solid red;*/
+    height: 100%;
+    width: 23%;
+    display: inline-block;
+}
+.movie_ticket{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: auto;
+    padding-bottom: 45px;
+}
+.movie_ticket h4{
+    margin-top: 30px;
+}
+#dropdown-menu1{
+    width: 120%;
+}
+#dropdown-menu1 .input-group{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 90%;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+#dropdown-menu1 .input-group:hover{
+    border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+#dropdown-menu1 .input-group input{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+#dropdown-menu1 .input-group input:focus{
+    border-color: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#dropdown-menu1 .input-group .input-group-addon{
+    background-color: rgba(0, 0, 0, 0);
+    color: #007897;
+    font-size: 17px;
+}
+#dropdown-menu2{
+    width: 200%;
+}
+
+#dropdown-menu2 .input-group{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 90%;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+#dropdown-menu2 .input-group:hover{
+    border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+#dropdown-menu2 .input-group input{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+#dropdown-menu2 .input-group input:focus{
+    border-color: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#dropdown-menu2 .input-group .input-group-addon{
+    background-color: rgba(0, 0, 0, 0);
+    color: #007897;
+    font-size: 17px;
+}
+
+#dropdown-menu3{
+    width: 200%;
+}
+.movie_ticket .dropdown button{
+    width: 80%;
+    margin-top: 20px;
+    text-align: left;
+}
+.movie_ticket .dropdown ul{
+    margin-left: 10%;
+}
+.movie_ticket .btn-primary{
+    height: 40px;
+    width: 62%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 3px;
+    border-radius: 100px;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.21);
+    border-color: #ffffff;
+}
+.movie_hot_list{
+    width: 77%;
+    height: 320px;
+    /*border: 1px solid red;*/
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: bottom;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.movie_hot_list .movie_last{
+    width: 24px;
+    height: 59px;
+    background-image: url("../img_main/index.jpg");
+    background-position: 0px -114px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.movie_hot_list .movie_next{
+    width: 24px;
+    height: 59px;
+    background-image: url("../img_main/index.jpg");
+    background-position: -24px -114px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0px;
+}
+.movie_hot_list .movie_last:hover{
+    background-image: url("../img_main/index.jpg");
+    background-position: -48px -114px;
+    cursor: pointer;
+}
+.movie_hot_list .movie_next:hover{
+    background-image: url("../img_main/index.jpg");
+    background-position: -72px -114px;
+    cursor: pointer;
+}
+.list_input{
+    width: 160px;
+    height: 100%;
+    /*border: 1px solid black;*/
+    display: inline-block;
+    text-align: center;
+}
+.list_input img{
+    margin-top: 10px;
+    padding: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.list_input h4,h5{
+    margin: 7px 0px;
+}
+.list_input h5{
+    color: #679c21;
+}
+.list_input button{
+    width: 100px;
+    border-radius: 1000px;
+    margin-top: 4px;
+}

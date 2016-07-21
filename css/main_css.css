@@ -1,0 +1,293 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+}
+.bgcolor{
+    height: 600px;
+    background: url("../img/select_bg2.jpg");
+}
+.headbox{
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+#selectbox{
+    border-radius: 100px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#selectbox button{
+    border: 0px;
+}
+#selectbox input{
+    height: 100%;
+    width: 100%;
+    border: 0px;
+}
+#selectbtn{
+    border-radius: 4px;
+    outline:none;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: rgba(0,0,0,0);
+}
+#myCarousel ol li{
+    margin-right: 20px;
+}
+#myCarousel ul{
+    margin-left: 10%;
+}
+#myCarousel ul li{
+    font-size: 20px;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid transparent;
+}
+#myCarousel ul li:hover{
+    border-bottom: 4px solid #ffffff;
+}
+#aaaaa{
+    position: relative;
+}
+#aaaaa img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.oggs{
+    min-width: 100%;
+    height: 500px;
+}
+#movie_news{
+    height:600px;
+    position:relative;
+    margin-top: -400px;
+    z-index: 11;
+    margin-bottom: 50px;
+}
+#movie_news .news_in{
+    background-color: #ffffff;
+    margin-top: 390px;
+    margin-left: -2px;
+    margin-right: -2px;
+    height: 200px;
+    position: relative;
+}
+#movie_news .item{
+    height:auto;
+}
+.news_pic{
+    position: absolute;
+    top: -180px;
+    margin-left: 30px;
+    background-color: #ffffff;
+}
+.news_pic img{
+    margin: 5px;
+    margin-bottom: 10px;
+}
+.news_in .movie_grade{
+    height: 52px;
+    width: 52px;
+    background-color: #679c21;
+    margin-left: 5px;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    margin-right: 30px;
+}
+.news_inu{
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 260px;
+    position: relative;
+}
+.news_dot{
+    height: 21px;
+    width: 22px;
+    background-image: url("../img/index.jpg");
+    background-position: -220px -68px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    left: -30px;
+
+}
+.news_inu h3{
+    margin: 0px 0px;
+    color: #679d21;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.imgdot{
+    height: 17px;
+    width: 17px;
+    display: block;
+    background-image: url(../img/index.jpg);
+    background-repeat: no-repeat;
+    background-position: -220px 0px;
+    margin-top: -29.5px;
+    margin-bottom: 20px;
+}
+.marketing h2{
+    margin-bottom: 30px;
+}
+.marketing .col-lg-4 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    /*text-align: center;*/
+    border-top: 2px dashed rgba(0, 0, 0, 0.13);
+}
+.marketing .col-lg-4 h3{
+    margin-top: -60px;
+    margin-left: 20px;
+}
+.marketing .col-lg-4 .moviepic{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow:0px 1px 8px rgba(0, 0, 0, 0.5);
+}
+.marketing .col-lg-4 .moviepic img{
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.marketing .col-lg-4 .movietext{
+    height: 230px;
+    padding-top: 20px;
+}
+.marketing .col-lg-4 .movietext h4{
+    margin-bottom: 40px;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.moviebox{
+    width: 285px;
+    border: 2px solid #efefef;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.27),0px 0px 60px rgba(0,0,0,0.1) inset;
+    position: relative;/*绝对定位*/
+    background: #fff;
+}
+.moviebox img{
+    margin: 5px;
+}
+.moviebox:before{
+    content: '';
+    position: absolute;/*相对定位*/
+    width: 80%;
+    height: 90%;
+    left:35px;
+    bottom: 8px;
+    background: transparent;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.6);
+    transform: skew(-12deg) rotate(-5deg);
+    z-index: -1;
+}
+.moviebox:after{
+    content: '';
+    position: absolute;/*相对定位*/
+    width: 80%;
+    height: 90%;
+    right: 35px;
+    bottom: 8px;
+    background: transparent;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.6);
+    transform: skew(12deg) rotate(5deg);
+    z-index: -2;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link rel="stylesheet" href="css/1_css.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/movie_1_js.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZEGoxf8InOsx9NPoZyCUQtXy"></script>
+    <script src="js/kendo.all.min.js"></script>
+
+</head>
+<body id="bodyContent">
+<div class="top_line">
+</div>
+<div class="top_bg">
+    <div class="login">
+        <span class="login_span1">请登录</span>
+        <div class="smile">
+            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+        </div>
+    </div>
+    <div id="wherebox" class="input-group form-control" style="width: 300px">
+        <input type="text" class="form-control" placeholder="地区" aria-describedby="basic-addon1" style="width: 245px" data-bind="value:Where">
+        <div class="input-group-btn">
+            <button id="wherebtn" type="button" class="btn btn-primary" onclick="Maps()">确定</button>
+        </div>
+    </div>
+    <div class="movie_where">
+        <span class="login_span2" data-bind="text:Where">地区</span>
+        <div class="smile">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+        </div>
+    </div>
+    <div class="login_list">
+        <h3>为爱电影的人</h3>
+        <h4>For people who love movies</h4>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></span>
+            <input type="password" class="form-control" placeholder="password" aria-describedby="basic-addon1">
+        </div>
+        <div class="next_login">
+            <span id="ok-circle"class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span><h5 id="automatic">下次自动登录</h5>
+        </div>
+        <button type="button" class="btn btn-primary">登陆</button>
+        <button type="button" class="btn btn-default">注册</button>
+    </div>
+</div>
+<div id="movie_bg" class="col-md-10 col-md-offset-1">
+    <img style="position:absolute;left:0px;top:0px;width:100%;height:100%;z-Index:-1;" src="img/index_shadow.png" /> <!--cssdiv背景图片随div大小-->
+    <div class="movie_in">
+        <div class="movie_pic">
+            <img src="img/171153.19417333_270X405X4.jpg">
+            <br/>
+            <br/>
+            <p><a href="#">北京MAX</a><span>46元起</span></p>
+            <p><a href="#">上海MAX</a><span>46元起</span></p>
+            <p><a href="#">杭州MAX</a><span>46元起</span></p>
+            <p><a href="#">广州MAX</a><span>46元起</span></p>
+            <a class="movie_more" href="#">134家影院在线售票 &raquo</a>
+            <div id="allmap" style="height: 272px; width: 272px;"></div>
+        </div>
+        <div class="movie_content">
+            <h2><b>火星救援</b><span>(2015)</span></h2>
+            <h3>The Martian</h3>
+            <div class="movie_time">
+            <p>130分钟 - 动作/冒险/科幻 - 2015年11月25日中国上映 - 3D/IMAX3D/中国巨幕</p>
+            </div>
+            <br/>
+            <br/>
+            <div>
+                <div class="movie_no">
+                    <h5>
+                        <a href="#"><span>35</span> 个视频 </a>
+                        <a href="#"><span>252</span> 张图片 </a>
+                        <a href="#"><span>100</span> 位演职员 </a>
+                        <a href="#"><span>999+</span> 条影评 </a>
+                        <a href="#"><span>102</span> 条新闻</a>
+                    </h5>
+                </div>
+                <div class="movie_talk">
+                    <div class="movie_score">
+                        <h1><b>8</b><span><b>&nbsp;.1</b></span></h1>
+                        <p>总分：10</p>
+                    </div>
+                    <div class="movie_sitiao">
+                        <p>5,514人评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6,984人想看</p>
+                        <hr class="featurette-divider">
+                        <ul>
+                            <li>音乐<div><div style="position: absolute;top: 0px;left: 0px;background-color: #49b6ff;width: 78%;height: 3px;border-top: 1px solid #40a0e0"></div></div></li>
+                            <li>画面<div><div style="position: absolute;top: 0px;left: 0px;background-color: #ff9300;width: 85%;height: 3px;border-top: 1px solid #e08100"></div></div></li>
+                            <li>导演<div><div style="position: absolute;top: 0px;left: 0px;background-color: #f83838;width: 67%;height: 3px;border-top: 1px solid #da3131"></div></div></li>
+                            <li>故事<div><div style="position: absolute;top: 0px;left: 0px;background-color: #47c502;width: 91%;height: 3px;border-top: 1px solid #3ead02"></div></div></li>
+                        </ul>
+                    </div>
+                    <div class="movie_input">
+                        <p>我要评分:</p>
+                        <button type="button" class="btn btn-default btn-sm">想看</button>
+                        <div id="input_1" class="input_score"><div></div></div><!--
+                        --><div id="input_2" class="input_score"><div></div></div><!--
+                        --><div id="input_3" class="input_score"><div></div></div><!--
+                        --><div id="input_4" class="input_score"><div></div></div><!--
+                        --><div id="input_5" class="input_score"><div></div></div><!--
+                        --><div id="input_6" class="input_score"><div></div></div><!--
+                        --><div id="input_7" class="input_score"><div></div></div><!--
+                        --><div id="input_8" class="input_score"><div></div></div><!--
+                        --><div id="input_9" class="input_score"><div></div></div><!--
+                        --><div id="input_10" class="input_score"><div></div></div>
+                        <br/>
+                        <br/>
+                        <textarea cols="40" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="movie_information">
+                    <div class="movie_director">
+                        <dl>
+                        <dd><span><b>导演：</b></span><a> 雷德利·斯科特</a></dd>
+                        <dd><span><b>编剧：</b></span><a> 德鲁·高达&nbsp;&nbsp;&nbsp;安迪·威尔</a></dd>
+                        <dd><span><b>国家地区：</b></span><a> 美国 </a></dd>
+                        <dd><span><b>发行公司：</b></span><a> 中国电影股份有限公司</a></dd>
+                        <dd><span><b>更多片名：</b></span><a> 绝地救援&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火星任务</a></dd>
+                        <dt>
+                            <span><b>剧情：</b></span>
+                            <p>影片改编自安迪·威尔同名原著。马特·达蒙饰演主人公马克·瓦特尼，他是阿瑞斯3号(Ares 3)飞船上的六名宇航员之一。飞船在执行火星登陆任务时意外遇到剧烈沙尘暴，造成沃特尼滞留火星，而同船的其他宇航员都以为他已经牺牲。飞船的指..</p>
+                        </dt>
+                        </dl>
+                    </div>
+                    <div class="movie_actor">
+                        <span><b>主演：</b></span>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="img/180618.89249618_50X50.jpg">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading">马特·达蒙</h5>
+                                <h5 class="media-heading">Matt Damon</h5>
+                                <h5 class="media-heading">饰 马克·瓦特尼</h5>
+                            </div>
+                            <div class="media-right">
+                                <a href="#">
+                                    <img class="media-object" src="img/155743.31244076_50X50X4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="img/153654.68309940_50X50.jpg">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading">马特·达蒙</h5>
+                                <h5 class="media-heading">Matt Damon</h5>
+                                <h5 class="media-heading">饰 马克·瓦特尼</h5>
+                            </div>
+                            <div class="media-right">
+                                <a href="#">
+                                    <img class="media-object" src="img/155853.34457685_50X50X4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="img/095106.17245205_50X50X4.jpg">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading">马特·达蒙</h5>
+                                <h5 class="media-heading">Matt Damon</h5>
+                                <h5 class="media-heading">饰 马克·瓦特尼</h5>
+                            </div>
+                            <div class="media-right">
+                                <a href="#">
+                                    <img class="media-object" src="img/160156.49543273_50X50X4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie_trailer">
+                        <h4>38个视频</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="talk_movie">
+    <div class="arrow-down"></div>
+    <div class="col-md-10 col-md-offset-1" id="my_talk">
+        <div class="col-md-5 my_talk_peo">
+            <div class="media-left">
+                <a href="#">
+                <img class="media-object" src="img/153654.68309940_50X50.jpg">
+                </a>
+            <h5 class="media-heading">马特·达蒙</h5>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">我要评分:</h4>
+                <button type="button" class="btn btn-default btn-sm">想看</button>
+            </div>
+        </div>
+        <div class="col-md-6 my_talk_in">
+            <textarea cols="80" rows="4"></textarea>
+            <p><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span>写长影评</span><button type="button" class="btn btn-info">发表</button></p>
+        </div>
+    </div>
+    <div class="col-md-10 col-md-offset-1" id="long_talk">
+        <div class="left_top"><b><h3>长影评</h3></b></div>
+        <div class="top_no">
+            <h2>TOP</h2>
+            <h1><b>1</b></h1>
+        </div>
+        <div class="long_talk_list">
+            <h2>《一直被拯救从未被超越》</h2>
+            <p>神作年年有，今年特别多，其中斯科特继《普罗米修斯》后的最新科幻大作《火星救援》自多伦多开幕以来受到空前礼遇，备受外媒和影迷追捧，目前烂番茄高达93%的好评和雷神科幻教父金字招牌也让影迷备受期待，当然作为雷粉的我也是其中之一。 外媒评价这部电影——“老雷和马..</p>
+            <div class="long_talk_pic"><img src="img_1/long%20talk%20pic1.PNG"></div>
+            <div class="long_talk_pic"><img src="img_1/long%20talk%20pic2.PNG"></div>
+            <div class="long_talk_pic"><img src="img_1/long%20talk%20pic3.PNG"></div>
+            <div>
+                <div class="long_talk_peo">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="img/153654.68309940_50X50.jpg">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading">马特·达蒙</h5>
+                        <h5 class="media-heading">2015-10-01 21:42</h5>
+                    </div>
+                </div>
+                <div class="long_talk_no"><span>8.4</span></div>
+                <div class="long_talk_zan">
+                    <p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span class="badge">42</span></p>
+                    <p><span class="glyphicon glyphicon-export" aria-hidden="true"></span><span class="badge">42</span></p>
+                    <p><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="badge">42</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10 col-md-offset-1" id="short_talk">
+        <div class="left_top"><b><h3>短影评</h3></b></div>
+        <div class="col-md-10 col-md-offset-1 short_talk_list">
+            <div class="col-md-3 short_talk_peo">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/153654.68309940_50X50.jpg">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><b>马特·达蒙</b></h4>
+                    <h5 class="media-heading">看过</h5>
+                    <div class="short_talk_no"><span>8.4</span></div>
+                </div>
+                <p>2015-12-17 14:45</p>
+            </div>
+            <div class="col-md-8 short_talk_in">
+                <p>万万没想到，讲的是移到火星上的荒岛生存的故事。超爱看宇宙中悬浮着航天器的画面，不管是在哪一部电影里，感觉好纯净的说. 马特达蒙虽然还是很帅，但那个航天员小帅哥，啊喂，你谁啊？好面熟呀？哪见过哩？</p>
+                <input type="text" class="form-control" placeholder="回复">
+                <div class="short_talk_zan">
+                    <p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span class="badge">42</span></p>
+                    <p><span class="glyphicon glyphicon-export" aria-hidden="true"></span><span class="badge">42</span></p>
+                    <p><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="badge">42</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 col-md-offset-1 short_talk_list">
+            <div class="col-md-3 short_talk_peo">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/153654.68309940_50X50.jpg">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><b>马特·达蒙</b></h4>
+                    <h5 class="media-heading">看过</h5>
+                    <div class="short_talk_no"><span>8.4</span></div>
+                </div>
+                <p>2015-12-17 14:45</p>
+            </div>
+            <div class="col-md-8 short_talk_in">
+                <p>万万没想到，讲的是移到火星上的荒岛生存的故事。超爱看宇宙中悬浮着航天器的画面，不管是在哪一部电影里，感觉好纯净的说. 马特达蒙虽然还是很帅，但那个航天员小帅哥，啊喂，你谁啊？好面熟呀？哪见过哩？</p>
+                <input type="text" class="form-control" placeholder="回复">
+                <div class="short_talk_zan">
+                    <p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span class="badge">42</span></p>
+                    <p><span class="glyphicon glyphicon-export" aria-hidden="true"></span><span class="badge">42</span></p>
+                    <p><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="badge">42</span></p>
+                </div>
+                <div class="short_talk_return">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="img/095106.17245205_50X50X4.jpg">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>雷德利·斯科特</b></h4>
+                        <h6>2小时前</h6>
+                        <p>能不能好好的评论了</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 col-md-offset-1 short_talk_list">
+            <div class="col-md-3 short_talk_peo">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/153654.68309940_50X50.jpg">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><b>马特·达蒙</b></h4>
+                    <h5 class="media-heading">看过</h5>
+                    <div class="short_talk_no"><span>8.4</span></div>
+                </div>
+                <p>2015-12-17 14:45</p>
+            </div>
+            <div class="col-md-8 short_talk_in">
+                <p>万万没想到，讲的是移到火星上的荒岛生存</p>
+                <input type="text" class="form-control" placeholder="回复">
+                <div class="short_talk_zan">
+                    <p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span class="badge">42</span></p>
+                    <p><span class="glyphicon glyphicon-export" aria-hidden="true"></span><span class="badge">42</span></p>
+                    <p><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="badge">42</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+    // 百度地图API功能
+//    var map = new BMap.Map("allmap");
+//    map.centerAndZoom(new BMap.Point(116.404, 39.915), 14);
+//
+//    var local = new BMap.LocalSearch(map, {
+//        renderOptions:{map: map}
+//    });
+//    local.searchInBounds("电影院", map.getBounds());
+//
+//    map.addEventListener("dragend",function(){
+//        map.clearOverlays();
+//        local.searchInBounds("电影院", map.getBounds());
+//    });
+
+    var viewModel1 = kendo.observable({
+        Where:"地区"
+    });
+    kendo.bind($("#bodyContent"),viewModel1);
+
+    function Maps() {
+        var a = viewModel1.Where;
+        var map = new BMap.Map("allmap");            // 创建Map实例
+        map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+        var local = new BMap.LocalSearch(map, {
+            renderOptions: {map: map, autoViewport: true}
+        });
+        local.searchNearby("电影院", a);
+    }
+    var maps1 = window.setTimeout(Maps,0);
+
+    document.getElementById("wherebtn").click();
+
+</script>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main_js.js"></script>
+</head>
+<body>
+<div class="head">
+    <div class="container">
+        <div class="search col-md-8 col-md-offset-2">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全部 <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">电影</a></li>
+                        <li><a href="#">影人</a></li>
+                        <li><a href="#">影院</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">商品</a></li>
+                    </ul>
+                </div><!-- /btn-group -->
+                <input type="text" placeholder="">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+    </div>
+</div>
+<div class="search_foot">
+</div>
+<div class="ppt">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-pause="false">
+        <div class="menu_bg">
+            <div class="top_menu  col-md-offset-1">
+                <a href="#">首页</a>
+                <a href="#">新闻</a>
+                <a href="#">影院</a>
+                <a href="#">社区</a>
+            </div>
+        </div>
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" id="li_1" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" id="li_2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" id="li_3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active ppt_1"></div>
+            <div class="item ppt_2"></div>
+            <div class="item ppt_3"></div>
+        </div>
+    </div>
+</div>
+<div class="content col-md-10 col-md-offset-1">
+    <img src="img_main/index_shadow.png" class="movie_about_bg">
+    <div class="movie_about">
+            <div id="movie_about_carousel" class="carousel-inner" role="listbox" data-pause="false">
+                <div class="item active">
+                    <div class="movie_pic">
+                        <img src="img_main/movie_pic1.jpg">
+                        <div style="height: 10px;width:196px;background-image: url('img_main/index.jpg');background-position: -5px 0px"></div>
+                        <div class="movie_pic_bottom">
+                            <div class="movie_no col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1">
+                                <h5>总评分</h5>
+                                <b>7.8</b>
+                            </div>
+                            <div class="movie_time col-md-7 col-sm-7">
+                                <h4>云中行走</h4>
+                                <h5>1月22日上映</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 200px;width:auto;margin-left: 240px;border:">
+                        <div style="background-image: url('img_main/index.jpg');background-position: -220px -68px;height: 20px;width: 22px;display: inline-block;vertical-align: top;margin-top: 25px;"></div>
+                        <div class="movie_information">
+                            <span>不看大屏幕没意思系列</span>
+                            <p>导演：罗伯特·泽米吉斯         主演：约瑟夫·高登-莱维特夏洛..</p>
+                            <h5>UME影城金牛店 45元18:00 38元20:30 38元21:40 >></h5>
+                            <h5>成都万达国际影城.. 33元18:20 33元20:40 33元23:05 >></h5>
+                        </div>
+                        <div class="movie_buy">
+                            <h1><b>23</b><span>元起</span></h1>
+                            <button type="button" class="btn btn-primary btn-lg">选座购票</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="movie_pic">
+                        <img src="img_main/movie_pic1.jpg">
+                        <div style="height: 10px;width:196px;background-image: url('img_main/index.jpg');background-position: -5px 0px"></div>
+                        <div class="movie_pic_bottom">
+                            <div class="movie_no col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1">
+                                <h5>总评分</h5>
+                                <b>7.8</b>
+                            </div>
+                            <div class="movie_time col-md-7 col-sm-7">
+                                <h4>云中行走</h4>
+                                <h5>1月22日上映</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 200px;width:auto;margin-left: 240px;border:">
+                        <div style="background-image: url('img_main/index.jpg');background-position: -220px -68px;height: 20px;width: 22px;display: inline-block;vertical-align: top;margin-top: 25px;"></div>
+                        <div class="movie_information">
+                            <span>不看大屏幕没意思系列</span>
+                            <p>导演：罗伯特·泽米吉斯         主演：约瑟夫·高登-莱维特夏洛..</p>
+                            <h5>UME影城金牛店 45元18:00 38元20:30 38元21:40 >></h5>
+                            <h5>成都万达国际影城.. 33元18:20 33元20:40 33元23:05 >></h5>
+                        </div>
+                        <div class="movie_buy">
+                            <h1><b>23</b><span>元起</span></h1>
+                            <button type="button" class="btn btn-primary btn-lg">选座购票</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="movie_pic">
+                        <img src="img_main/movie_pic1.jpg">
+                        <div style="height: 10px;width:196px;background-image: url('img_main/index.jpg');background-position: -5px 0px"></div>
+                        <div class="movie_pic_bottom">
+                            <div class="movie_no col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1">
+                                <h5>总评分</h5>
+                                <b>7.8</b>
+                            </div>
+                            <div class="movie_time col-md-7 col-sm-7">
+                                <h4>云中行走</h4>
+                                <h5>1月22日上映</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 200px;width:auto;margin-left: 240px;">
+                        <div style="background-image: url('img_main/index.jpg');background-position: -220px -68px;height: 20px;width: 22px;display: inline-block;vertical-align: top;margin-top: 25px;"></div>
+                        <div class="movie_information">
+                            <span>不看大屏幕没意思系列</span>
+                            <p>导演：罗伯特·泽米吉斯         主演：约瑟夫·高登-莱维特夏洛..</p>
+                            <h5>UME影城金牛店 45元18:00 38元20:30 38元21:40 >></h5>
+                            <h5>成都万达国际影城.. 33元18:20 33元20:40 33元23:05 >></h5>
+                        </div>
+                        <div class="movie_buy">
+                            <h1><b>23</b><span>元起</span></h1>
+                            <button type="button" class="btn btn-primary btn-lg">选 座 购 票</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%;height: 400px;">
+                    <div class="movie_hot">
+                        <h4 style="margin-left: 20px;font-size: 20px;font-weight: 500;">正在热映<span style="font-size: 35px;"> 50 </span>部</h4>
+                        <div class="movie_ticket">
+                            <h4><span class="glyphicon glyphicon-map-marker"></span>上海</h4>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    选影片
+                                    <span class="caret"></span>
+                                </button>
+                                <ul id="dropdown-menu1" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search for...">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                            </div>
+                                        </div><!-- /input-group -->
+                                    </li>
+                                    <li><a href="#">Something else here<div style="height: 21px;width: 25px;background-color: #679c21;display: inline-block;float: right;color: #ffffff;text-align: center"><b>7.4</b></div></a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    选影院
+                                    <span class="caret"></span>
+                                </button>
+                                    <ul  id="dropdown-menu2" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Search for...">
+                                                    <div class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                                    </div>
+                                                </div><!-- /input-group -->
+                                            </li>
+                                        <div style="overflow: scroll;height: 200px;">
+                                            <li><a href="#">Another action</a></li>
+                                            <li><div>
+                                                <div style="display: inline-block;vertical-align: top;padding: 0;">111223</div>
+                                                <div style="width: 40%;display: inline-block">
+                                                    <ul>
+                                                        <li>1111</li>
+                                                        <li>1111</li>
+                                                        <li>1111</li>
+                                                        <li>1111</li>
+                                                    </ul>
+                                                </div>
+                                                <div style="width: 40%;display: inline-block">
+                                                    <ul>
+                                                        <li>2222</li>
+                                                        <li>1111</li>
+                                                        <li>1111</li>
+                                                        <li>1111</li>
+                                                    </ul>
+                                                </div>
+                                            </div></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </div>
+                                    </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    选时间
+                                    <span class="caret"></span>
+                                </button>
+                                <ul  id="dropdown-menu3" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-primary">选座购票</button>
+                        </div>
+                    </div>
+                    <div class="movie_hot_list">
+                            <div class="col-md-1 col-sm-1" style="height: 320px;display: inline-block;">
+                                <div style="height: 100%;width: 0px;display: inline-block;vertical-align: middle;"></div><!--为了使按钮垂直居中-->
+                                <div class="movie_last"></div>
+                            </div>
+                            <div class="col-md-10 col-sm-10" style="display: inline-block;height: 320px;vertical-align: middle;overflow: hidden;text-align: left;position: relative;">
+                                <div id="list_demo" class="list_demo" style="width:2000px;position: absolute">
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_1.jpg">
+                                        <h4>美人鱼</h4>
+                                        <h5>喜剧之王只是开始思考了</h5>
+                                        <button type="button" class="btn btn-primary btn-sm">选座购票</button>
+                                    </div>
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_2.jpg">
+                                        <h4>美人鱼</h4>
+                                        <h5>喜剧之王只是开始思考了</h5>
+                                        <button type="button" class="btn btn-primary btn-sm">选座购票</button>
+                                    </div>
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_3.jpg">
+                                        <h4>美人鱼</h4>
+                                        <h5>喜剧之王只是开始思考了</h5>
+                                        <button type="button" class="btn btn-primary btn-sm">选座购票</button>
+                                    </div>
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_4.jpg">
+                                        <h4>美人鱼</h4>
+                                        <h5>喜剧之王只是开始思考了</h5>
+                                        <button type="button" class="btn btn-primary btn-sm">选座购票</button>
+                                    </div>
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_4.jpg">
+                                        <h4>美人鱼</h4>
+                                        <h5>喜剧之王只是开始思考了</h5>
+                                        <button type="button" class="btn btn-primary btn-sm">选座购票</button>
+                                    </div>
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_4.jpg">
+                                        <h4>美人鱼</h4>
+                                        <h5>喜剧之王只是开始思考了</h5>
+                                        <button type="button" class="btn btn-primary btn-sm">选座购票</button>
+                                    </div>
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_4.jpg">
+                                        <h4>美人鱼</h4>
+                                        <h5>喜剧之王只是开始思考了</h5>
+                                        <button type="button" class="btn btn-primary btn-sm">选座购票</button>
+                                    </div>
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_4.jpg">
+                                        <h4>美人鱼</h4>
+                                        <h5>喜剧之王只是开始思考了</h5>
+                                        <button type="button" class="btn btn-primary btn-sm">选座购票</button>
+                                    </div>
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_4.jpg">
+                                    </div>
+                                    <div class="list_input">
+                                        <img src="img_main/movie_list_4.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-sm-1" style="height: 320px;display: inline-block;">
+                                <div style="height: 100%;width: 0px;display: inline-block;vertical-align: middle;"></div><!--为了使按钮垂直居中-->
+                                <div class="movie_next"></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div>
+    <h2>22222222</h2>
+</div>
+</body>
+</html>
